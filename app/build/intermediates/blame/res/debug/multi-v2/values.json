@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\TrafficClient\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "E:\\AndroidStudio --Project\\Trffic_921_1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "F:\\TrafficClient\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-2\\files-2.1\\9c3410b83a578381021aea54f2aecea4\\support-compat-26.0.0-beta1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,318",
+                        "endLines": "2,6",
+                        "endColumns": "262,115",
+                        "endOffsets": "313,586"
+                    },
+                    "to": {
+                        "startLines": "56,57",
+                        "startColumns": "4,4",
+                        "startOffsets": "2508,2771",
+                        "endLines": "56,60",
+                        "endColumns": "262,115",
+                        "endOffsets": "2766,3039"
+                    }
+                },
+                {
+                    "source": "E:\\AndroidStudio --Project\\Trffic_921_1\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "3,11,4,5,7,8,9,10,6",
                         "startColumns": "1,4,4,4,4,4,4,4,4",
@@ -21,7 +40,26 @@
                     }
                 },
                 {
-                    "source": "F:\\TrafficClient\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "E:\\AndroidStudio --Project\\Trffic_921_1\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "6,4,5,13,16,9,7,8,29,28,20,21,22,23,24,25,11,15,14,26,27,19,17,18,12,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "156,65,112,455,587,288,204,247,1188,1137,809,847,887,925,963,1002,375,546,500,1040,1089,749,636,692,413,336",
+                        "endLines": "6,4,5,13,16,9,7,8,30,28,20,21,22,23,24,25,11,15,14,26,27,19,17,18,12,10",
+                        "endColumns": "46,45,42,43,47,46,41,39,57,49,36,38,36,36,37,36,36,39,44,47,46,58,54,55,40,37",
+                        "endOffsets": "198,106,150,494,630,330,241,282,1283,1182,841,881,919,957,996,1034,407,581,540,1083,1131,803,686,743,449,369"
+                    },
+                    "to": {
+                        "startLines": "13,14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "565,612,658,701,745,793,840,882,922,1021,1071,1108,1147,1184,1221,1259,1296,1333,1373,1418,1466,1513,1572,1627,1683,1724",
+                        "endLines": "13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39",
+                        "endColumns": "46,45,42,43,47,46,41,39,57,49,36,38,36,36,37,36,36,39,44,47,46,58,54,55,40,37",
+                        "endOffsets": "607,653,696,740,788,835,877,917,1016,1066,1103,1142,1179,1216,1254,1291,1328,1368,1413,1461,1508,1567,1622,1678,1719,1757"
+                    }
+                },
+                {
+                    "source": "E:\\AndroidStudio --Project\\Trffic_921_1\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "6,15,19,23",
                         "startColumns": "4,4,0,5",
@@ -31,16 +69,16 @@
                         "endOffsets": "484,682,827,988"
                     },
                     "to": {
-                        "startLines": "39,46,49,52",
+                        "startLines": "40,47,50,53",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "2069,2360,2520,2664",
-                        "endLines": "45,48,51,54",
+                        "startOffsets": "1762,2053,2213,2357",
+                        "endLines": "46,49,52,55",
                         "endColumns": "12,12,8,12",
-                        "endOffsets": "2355,2515,2659,2810"
+                        "endOffsets": "2048,2208,2352,2503"
                     }
                 },
                 {
-                    "source": "F:\\TrafficClient\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "E:\\AndroidStudio --Project\\Trffic_921_1\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
                         "startLines": "3,4",
                         "startColumns": "4,4",
@@ -49,30 +87,11 @@
                         "endOffsets": "145,202"
                     },
                     "to": {
-                        "startLines": "16,17",
+                        "startLines": "11,12",
                         "startColumns": "4,4",
-                        "startOffsets": "987,1045",
+                        "startOffsets": "451,509",
                         "endColumns": "57,55",
-                        "endOffsets": "1040,1096"
-                    }
-                },
-                {
-                    "source": "F:\\TrafficClient\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "6,4,5,13,17,9,7,8,25,24,11,15,14,22,23,21,19,20,12,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "150,61,107,442,572,279,197,239,936,886,364,531,486,791,839,733,625,678,401,326",
-                        "endLines": "6,4,5,13,17,9,7,8,26,24,11,15,14,22,23,21,19,20,12,10",
-                        "endColumns": "46,45,42,43,47,46,41,39,57,49,36,39,44,47,46,57,52,54,40,37",
-                        "endOffsets": "192,102,145,481,615,321,234,274,1030,931,396,566,526,834,881,786,673,728,437,359"
-                    },
-                    "to": {
-                        "startLines": "18,19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35,36,37,38",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1101,1148,1194,1237,1281,1329,1376,1418,1458,1557,1607,1644,1684,1729,1777,1824,1882,1935,1990,2031",
-                        "endLines": "18,19,20,21,22,23,24,25,27,28,29,30,31,32,33,34,35,36,37,38",
-                        "endColumns": "46,45,42,43,47,46,41,39,57,49,36,39,44,47,46,57,52,54,40,37",
-                        "endOffsets": "1143,1189,1232,1276,1324,1371,1413,1453,1552,1602,1639,1679,1724,1772,1819,1877,1930,1985,2026,2064"
+                        "endOffsets": "504,560"
                     }
                 }
             ]
