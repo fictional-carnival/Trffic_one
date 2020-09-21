@@ -9,6 +9,8 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.gson.Gson;
+import com.mad.db.DB;
 import com.mad.trafficclient.httppost.HttpPostRequest;
 import com.mad.trafficclient.util.LoadingDialog;
 
@@ -28,8 +30,10 @@ public class Initapp extends Application {
     public static SharedPreferences.Editor edit;
     public static Context context;
     private static Toast tos;
-    public static JSONObject user;
+    public static String user;
     public static HttpPostRequest postRequest;
+    public static String url;
+    public static Gson gson;
 
     @Override
     public void onCreate() {
@@ -38,10 +42,18 @@ public class Initapp extends Application {
         context = this;
         sp = getSharedPreferences("settings", MODE_PRIVATE);
         edit = sp.edit();
+        gson = new Gson();
+        url = "http://192.168.1.120:8080/api/v2/";
         postRequest = new HttpPostRequest();
-        HashMap hashMap = new HashMap();
-        hashMap.put("UserName", "user1");
-        user = new JSONObject(hashMap);
+//        new DB(context,)
+//        HashMap hashMap = new HashMap();
+//        hashMap.put("UserName", "user1");
+        user = "{\"UserName\":\"user1\"}";
+    }
+
+    public static void setData() {
+        postRequest.requestHttp(url + "get_all_user_info", user);
+
     }
 
     public static void toast(String s) {

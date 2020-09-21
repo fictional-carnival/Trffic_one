@@ -19,7 +19,6 @@ android {
 
 dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
-    implementation 'com.google.code.gson:gson:2.8.6'
     implementation files('libs\\achartengine.jar')
     implementation files('libs\\android-async-http-1.4.3.jar')
     compile files('libs/volley.jar')

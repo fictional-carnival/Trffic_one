@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.mad.trafficclient.fragment;
 
@@ -10,21 +10,22 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
 
 
-public class Fragment_2 extends Fragment
-{
+public class Fragment_2 extends Fragment {
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState)
-	{
-		View view = inflater
-				.inflate(R.layout.fragment_layout02, container, false);
-		TextView textview = (TextView) view.findViewById(R.id.textview);
-		textview.setText("this is fragment 2");
-		return view;
-	}
+    private ListView listView;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater
+                .inflate(R.layout.fragment_layout02, container, false);
+        listView = view.findViewById(R.id.lv_f2);
+
+        return view;
+    }
 
 }

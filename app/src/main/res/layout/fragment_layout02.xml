@@ -5,12 +5,9 @@
     android:background="#f1f1f1"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="02"
-        android:padding="10dp"
-        android:textColor="@android:color/black" />
+    <ListView
+        android:id="@+id/lv_f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
