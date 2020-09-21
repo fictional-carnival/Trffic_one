@@ -15,6 +15,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.mad.bean.BaseBean;
+import com.mad.bean.Car;
 import com.mad.bean.User;
 import com.mad.db.DB;
 import com.mad.trafficclient.httppost.HttpPostRequest;
@@ -28,6 +29,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -39,7 +41,7 @@ public class Initapp extends Application {
     public static SharedPreferences.Editor edit;
     public static Context context;
     private static Toast tos;
-    public static JSONObject user;
+    public static User.ROWSDETAILBean user;
     public static String url;
     public static Gson gson;
     public static DB db;
@@ -85,7 +87,35 @@ public class Initapp extends Application {
             }
         });
     }
-
+    public static void getUser(String type, String name) {
+        try {
+            JSONArray array = new JSONObject(getData("User")).getJSONArray("ROWS_DETAIL");
+            for (int i = 0, l = array.length(); i < l; i++) {
+                JSONObject object = array.getJSONObject(i);
+                if (name.equals(object.getString(type))) {
+                    user = gson.fromJson(String.valueOf(object), User.ROWSDETAILBean.class);
+                }
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+    public static ArrayList<Car.ROWSDETAILBean> getCar(String type, String name) {
+        try {
+            JSONArray array = new JSONObject(getData("Car")).getJSONArray("ROWS_DETAIL");
+            ArrayList<Car.ROWSDETAILBean> carlist = new ArrayList<>();
+            for (int i = 0, l = array.length(); i < l; i++) {
+                JSONObject object = array.getJSONObject(i);
+                if (name.equals(object.getString(type))) {
+                    carlist.add(gson.fromJson(String.valueOf(object), Car.ROWSDETAILBean.class));
+                }
+            }
+            return carlist;
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
     public static void doPost(String path, Map map, Response.Listener<JSONObject> listener) {
         HashMap hashMap = new HashMap();
         hashMap.put("UserName", "user1");

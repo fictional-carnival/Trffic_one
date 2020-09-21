@@ -3,6 +3,8 @@
  */
 package com.mad.trafficclient.fragment;
 
+import com.mad.Initapp;
+import com.mad.bean.Car;
 import com.mad.trafficclient.R;
 
 import android.os.Bundle;

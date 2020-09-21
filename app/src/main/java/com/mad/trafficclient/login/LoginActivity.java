@@ -93,7 +93,7 @@ public class LoginActivity extends Activity  {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				Initapp.user = params;
+				Initapp.getUser("username", userName);
 				Log.d("TAG", params.toString());
 
 
