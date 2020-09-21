@@ -27,6 +27,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
+import com.mad.bean.AppBean;
 import com.mad.trafficclient.fragment.FragmentHome;
 import com.mad.trafficclient.fragment.Fragment_1;
 import com.mad.trafficclient.fragment.Fragment_2;
@@ -92,12 +93,17 @@ public class MainActivity extends FragmentActivity
 				}
 			}
 		});
-        
-      
+
         final String[] actionTexts = new String[]{
                 getString(R.string.res_left_wodezhanghu),
                 getString(R.string.res_left_zhanghuguanli),
                 getString(R.string.res_left_honglvdengguanli),
+                getString(R.string.ll1),
+                getString(R.string.ll2),
+                getString(R.string.ll3),
+                getString(R.string.ll5),
+                getString(R.string.ll6),
+                getString(R.string.ll7),
                 getString(R.string.res_left_chuanyi),
                 getString(R.string.res_left_exit)
 
@@ -107,6 +113,12 @@ public class MainActivity extends FragmentActivity
                 R.drawable.btn_l_book,
                 R.drawable.btn_l_slideshow,
                 R.drawable.btn_l_target,
+                R.drawable.btn_l_download,
+                R.drawable.btn_l_download,
+                R.drawable.btn_l_download,
+                R.drawable.btn_l_download,
+                R.drawable.btn_l_download,
+                R.drawable.btn_l_download,
                 R.drawable.btn_l_download
         };
 
@@ -132,28 +144,44 @@ public class MainActivity extends FragmentActivity
 				case 0:
 					getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_1()).commit();
 					tV_title.setText(actionTexts[arg2]);
-
 					break;
 
 				case 1:
 					getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_2()).commit();
 					tV_title.setText(actionTexts[arg2]);
-
 					break;
 
 				case 2:
 					getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_3()).commit();
 					tV_title.setText(actionTexts[arg2]);
-
 					break;
 
 				case 3:
 					getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_4()).commit();
 					tV_title.setText(actionTexts[arg2]);
-
 					break;
 
-				case 4:
+					case 4:
+						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_4()).commit();
+						tV_title.setText(actionTexts[arg2]);
+						break;
+					case 5:
+						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_4()).commit();
+						tV_title.setText(actionTexts[arg2]);
+						break;
+					case 6:
+						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_4()).commit();
+						tV_title.setText(actionTexts[arg2]);
+						break;
+					case 7:
+						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_4()).commit();
+						tV_title.setText(actionTexts[arg2]);
+						break;
+					case 8:
+						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_4()).commit();
+						tV_title.setText(actionTexts[arg2]);
+						break;
+				case 9:
 					exitAppDialog();
 
 					break;
