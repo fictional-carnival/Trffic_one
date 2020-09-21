@@ -13,12 +13,9 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SlidingPaneLayout;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -27,13 +24,13 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-import com.mad.bean.AppBean;
 import com.mad.trafficclient.fragment.FragmentHome;
 import com.mad.trafficclient.fragment.Fragment_1;
 import com.mad.trafficclient.fragment.Fragment_2;
 import com.mad.trafficclient.fragment.Fragment_3;
 import com.mad.trafficclient.fragment.Fragment_4;
 import com.mad.trafficclient.fragment.Fragment_7;
+import com.mad.trafficclient.fragment.Fragment_9;
 
 
 /**
@@ -178,6 +175,8 @@ public class MainActivity extends FragmentActivity
 						tV_title.setText(actionTexts[arg2]);
 						break;
 					case 8:
+						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_9()).commit();
+						tV_title.setText(actionTexts[arg2]);
 						break;
 				case 9:
 					break;

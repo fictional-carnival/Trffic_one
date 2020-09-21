@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Trffic_921_1.iml" filepath="$PROJECT_DIR$/.idea/modules/Trffic_921_1.iml" group="Trffic_921_1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Trffic_one.iml" filepath="$PROJECT_DIR$/.idea/modules/Trffic_one.iml" group="Trffic_one" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Trffic_one-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Trffic_one-app.iml" group="Trffic_one/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Trffic_921_1/app" />
     </modules>
   </component>
