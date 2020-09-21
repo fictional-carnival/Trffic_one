@@ -168,6 +168,7 @@ public class MainActivity extends FragmentActivity
 						break;
 					case 6:
 						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_7()).commit();
+
 						tV_title.setText(actionTexts[arg2]);
 						break;
 					case 7:
