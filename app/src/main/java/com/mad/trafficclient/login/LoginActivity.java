@@ -155,7 +155,11 @@ public class LoginActivity extends Activity  {
 						// TODO Auto-generated method stub
 						urlHttp = edit_urlHttp.getText().toString();
 						urlPort = edit_urlPort.getText().toString();
-
+						if (Integer.parseInt(urlPort) < 0 || Integer.parseInt(urlPort) > 65535) {
+							edit_urlPort.setText(null);
+							Initapp.toast("端口号错误");
+							return;
+						}
 						if ( urlHttp == null || urlHttp.equals("")   ) {
 							Toast.makeText(LoginActivity.this,R.string.error_ip, Toast.LENGTH_LONG).show();
 						} else {
