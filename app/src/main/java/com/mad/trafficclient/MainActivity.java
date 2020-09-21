@@ -33,7 +33,7 @@ import com.mad.trafficclient.fragment.Fragment_1;
 import com.mad.trafficclient.fragment.Fragment_2;
 import com.mad.trafficclient.fragment.Fragment_3;
 import com.mad.trafficclient.fragment.Fragment_4;
-
+import com.mad.trafficclient.fragment.Fragment_7;
 
 
 /**
@@ -170,7 +170,7 @@ public class MainActivity extends FragmentActivity
 						tV_title.setText(actionTexts[arg2]);
 						break;
 					case 6:
-						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_4()).commit();
+						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_7()).commit();
 						tV_title.setText(actionTexts[arg2]);
 						break;
 					case 7:
