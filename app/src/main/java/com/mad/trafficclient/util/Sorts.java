@@ -1,5 +1,9 @@
 package com.mad.trafficclient.util;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.LinkedList;
@@ -15,10 +19,10 @@ public class Sorts {
 	
 	public static final int MODE_TRAFFIC_ID_UP = 2;
 	public static final int MODE_TRAFFIC_ID_DOWN = 3;
-	public static final int MODE_TRAFFIC_GREEN_UP = 4;
-	public static final int MODE_TRAFFIC_GREEN_DOWN = 5;
-	public static final int MODE_TRAFFIC_RED_UP = 6;
-	public static final int MODE_TRAFFIC_RED_DOWN = 7;
+	public static final int MODE_TRAFFIC_GREEN_UP = 6;
+	public static final int MODE_TRAFFIC_GREEN_DOWN = 7;
+	public static final int MODE_TRAFFIC_RED_UP = 4;
+	public static final int MODE_TRAFFIC_RED_DOWN = 5;
 	public static final int MODE_TRAFFIC_YELLOW_UP = 8;
 	public static final int MODE_TRAFFIC_YELLOW_DOWN = 9;
 	
@@ -39,7 +43,8 @@ public class Sorts {
 		return list;
 	}
 	
-	public static TrafficLightBean[] trafficLight(TrafficLightBean[] beans, final int mode) {
+	@RequiresApi(api = Build.VERSION_CODES.N)
+	public static ArrayList<TrafficLightBean> trafficLight(ArrayList<TrafficLightBean> beans, final int mode) {
 		Comparator<TrafficLightBean> com = new Comparator<TrafficLightBean>() {
 			
 			@Override
@@ -76,7 +81,7 @@ public class Sorts {
 				return r;
 			}
 		};
-		Arrays.sort(beans, com);
+		beans.sort(com);
 		return beans;
 	}
 }

@@ -51,7 +51,6 @@ public class Initapp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         context = this;
         sp = getSharedPreferences("settings", MODE_PRIVATE);
         edit = sp.edit();

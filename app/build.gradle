@@ -21,6 +21,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation files('libs\\achartengine.jar')
     implementation files('libs\\android-async-http-1.4.3.jar')
+    implementation files('libs\\ZXing-3.3.3.jar')
     compile files('libs/volley.jar')
     compile files('libs/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar')
     implementation 'com.android.support:support-v4:26.0.0-beta1'

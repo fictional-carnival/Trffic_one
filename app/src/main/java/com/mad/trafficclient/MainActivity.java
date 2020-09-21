@@ -174,17 +174,17 @@ public class MainActivity extends FragmentActivity
 						tV_title.setText(actionTexts[arg2]);
 						break;
 					case 7:
-						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_4()).commit();
+						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_8()).commit();
 						tV_title.setText(actionTexts[arg2]);
 						break;
 					case 8:
-						getSupportFragmentManager().beginTransaction().replace(R.id.maincontent, new Fragment_4()).commit();
-						tV_title.setText(actionTexts[arg2]);
 						break;
 				case 9:
-					exitAppDialog();
-
 					break;
+					case 10:
+						exitAppDialog();
+
+						break;
 	
 				default:
 					break;
