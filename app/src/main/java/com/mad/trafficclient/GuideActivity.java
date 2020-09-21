@@ -8,6 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
+import com.mad.Initapp;
 import com.mad.trafficclient.login.LoginActivity;
 
 public class GuideActivity extends Activity {
@@ -17,6 +18,13 @@ public class GuideActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		boolean first = Initapp.sp.getBoolean("first", true);
+		if (!first) {
+			Intent intent = new Intent(GuideActivity.this,
+					LoginActivity.class);
+			startActivity(intent);
+			finish();
+		}
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 		WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -28,6 +36,7 @@ public class GuideActivity extends Activity {
 				Intent intent = new Intent(GuideActivity.this,
 						LoginActivity.class);
 				startActivity(intent);
+				Initapp.edit.putBoolean("first", false).commit();
 				finish();
 			}
 		});

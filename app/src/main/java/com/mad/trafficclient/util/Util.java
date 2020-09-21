@@ -42,8 +42,8 @@ public class Util {
 
         SharedPreferences loadSettingLoad = context.getSharedPreferences("setting", MODE_PRIVATE);
         //这里是将setting.xml 中的数据读出来
-        urlBean.setUrl( loadSettingLoad.getString("ipUrl", "") );
-        urlBean.setPort( loadSettingLoad.getString("ipPort", "") );
+        urlBean.setUrl( loadSettingLoad.getString("ipUrl", "192.168.1.120") );
+        urlBean.setPort( loadSettingLoad.getString("ipPort", "8080") );
 
 //        String urlSetting = "http://" + urlHttp+ ":" + urlPort + "/";
         return urlBean;

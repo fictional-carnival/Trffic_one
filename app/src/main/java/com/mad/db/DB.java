@@ -16,7 +16,7 @@ public class DB extends SQLiteOpenHelper {
 	private static DB instance;
 	private SQLiteDatabase conn;
 
-	private DB(Context context, String name, CursorFactory factory, int version) {
+	public DB(Context context, String name, CursorFactory factory, int version) {
 		super(context, name, factory, version);
 	}
 	
@@ -44,8 +44,9 @@ public class DB extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase arg0) {
 		this.conn = arg0;
-		this.conn.execSQL("CREATE TABLE user (_id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT, pass TEXT)");
+//		this.conn.execSQL("CREATE TABLE user (_id INTEGER PRIMARY KEY AUTOINCREMENT, user TEXT, pass TEXT)");
 		this.conn.execSQL("CREATE TABLE recharge (_id INTEGER PRIMARY KEY AUTOINCREMENT, carId INTEGER, money INTEGER, user TEXT, time INTEGER)");
+		this.conn.execSQL("CREATE TABLE user (_id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT,pname TEXT,pcardid INTEGER,psex TEXT, ptel TEXT,pregisterdate timestamp)");
 	}
 
 	@Override

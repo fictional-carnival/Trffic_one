@@ -19,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.mad.Initapp;
 import com.mad.trafficclient.MainActivity;
 import com.mad.trafficclient.R;
 import com.mad.trafficclient.util.LoadingDialog;
@@ -92,6 +93,7 @@ public class LoginActivity extends Activity  {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+				Initapp.user = params;
 				Log.d("TAG", params.toString());
 
 
@@ -99,32 +101,35 @@ public class LoginActivity extends Activity  {
 
 				Log.d("TAG", strUrl);
 
-//				RequestQueue mQueue = Volley.newRequestQueue(LoginActivity.this);
-//				JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, strUrl, params, new Response.Listener<JSONObject>() {
-//					@Override
-//					public void onResponse(JSONObject response) {
+				RequestQueue mQueue = Volley.newRequestQueue(LoginActivity.this);
+				JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, strUrl, params, new Response.Listener<JSONObject>() {
+					@Override
+					public void onResponse(JSONObject response) {
 						// TODO Auto-generated method stu
-//						Log.d("TAG", response.toString());
-//						LoadingDialog.disDialog();
-//						if ( response.optString("RESULT").equals("S")){
-//							Toast.makeText(getApplicationContext(), response.optString("ERRMSG"), Toast.LENGTH_LONG).show();
+						Log.d("TAG", response.toString());
+						LoadingDialog.disDialog();
+						if ( response.optString("RESULT").equals("S")){
+							Toast.makeText(getApplicationContext(), response.optString("ERRMSG"), Toast.LENGTH_LONG).show();
 
 							Intent intent = new Intent(LoginActivity.this,	MainActivity.class);
 							startActivity(intent);
 							finish();
+						}else if ( response.optString("RESULT").equals("F")) {
+							Toast.makeText(getApplicationContext(), response.optString("ERRMSG"), Toast.LENGTH_LONG).show();
+						}
 
-//					}
-//				}, new Response.ErrorListener() {
-//					@Override
-//					public void onErrorResponse(VolleyError error) {
-//						// TODO Auto-generated method stub
-//						LoadingDialog.disDialog();
-//                        Log.d("TAG volley error", error.toString());
-//						Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_LONG).show();
-//
-//					}
-//				});
-//				mQueue.add(jsonObjectRequest);
+					}
+				}, new Response.ErrorListener() {
+					@Override
+					public void onErrorResponse(VolleyError error) {
+						// TODO Auto-generated method stub
+						LoadingDialog.disDialog();
+                        Log.d("TAG volley error", error.toString());
+						Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_LONG).show();
+
+					}
+				});
+				mQueue.add(jsonObjectRequest);
 			}
 		});
 		

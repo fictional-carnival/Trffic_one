@@ -47,6 +47,7 @@ public class HttpPostRequest {
 		try {
 			System.out.println("start ***url:"+url);
 			System.out.println("start ***strjson:"+strjson);
+			System.out.println("start ***strjson:"+mPost);
 			mHttpClient.getParams().setIntParameter(HttpConnectionParams.SO_TIMEOUT, 5000);
 			mHttpClient.getParams().setIntParameter(HttpConnectionParams.CONNECTION_TIMEOUT, 3000);
 			HttpResponse response = mHttpClient.execute(mPost);

@@ -1,18 +1,18 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-44:12
 MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\a665ab17444759732f645855fa81852d\support-v4-26.0.0-beta1\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\3bf34bdfddbb8ce7386184d13b963d95\support-media-compat-26.0.0-beta1\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\0e8ed2391eea3f1efaf0142e376decec\support-fragment-26.0.0-beta1\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\4a8f97ad1c3f87b801961db5277cc5d5\support-core-utils-26.0.0-beta1\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\44b76431486280053e1d34869841b628\support-core-ui-26.0.0-beta1\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\9c3410b83a578381021aea54f2aecea4\support-compat-26.0.0-beta1\AndroidManifest.xml:17:1-31:12
-INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml
@@ -36,7 +36,7 @@ ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.
 	android:name
 		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:12:22-76
 application
-ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:15:5-41:19
+ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:15:5-42:19
 MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\a665ab17444759732f645855fa81852d\support-v4-26.0.0-beta1\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\a665ab17444759732f645855fa81852d\support-v4-26.0.0-beta1\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\3bf34bdfddbb8ce7386184d13b963d95\support-media-compat-26.0.0-beta1\AndroidManifest.xml:25:5-29:19
@@ -50,53 +50,55 @@ MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\Lenovo\.
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\9c3410b83a578381021aea54f2aecea4\support-compat-26.0.0-beta1\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\9c3410b83a578381021aea54f2aecea4\support-compat-26.0.0-beta1\AndroidManifest.xml:25:5-29:19
 	android:label
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:18:9-41
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:19:9-41
 	android:icon
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:17:9-45
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:18:9-45
 	android:allowBackup
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:20:9-40
+	android:name
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:16:9-39
 activity#com.mad.trafficclient.GuideActivity
-ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:21:9-28:20
+ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:22:9-29:20
 	android:screenOrientation
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:22:13-50
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:23:13-50
 	android:name
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:21:19-48
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:22:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:27:27-74
 activity#com.mad.trafficclient.MainActivity
-ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:29:9-32:49
+ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:30:9-33:49
 	android:screenOrientation
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:31:13-50
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:32:13-50
 	android:label
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:32:13-46
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:33:13-46
 	android:name
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:30:13-41
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:31:13-41
 activity#com.mad.trafficclient.login.LoginActivity
-ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:33:9-36:49
+ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:34:9-37:49
 	android:screenOrientation
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:35:13-50
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:36:13-50
 	android:label
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:36:13-46
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:37:13-46
 	android:name
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:34:13-48
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:35:13-48
 activity#com.mad.trafficclient.login.RegActivity
-ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:37:9-40:49
+ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:38:9-41:49
 	android:screenOrientation
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:39:13-50
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:40:13-50
 	android:label
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:40:13-46
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:41:13-46
 	android:name
-		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:38:13-46
+		ADDED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml:39:13-46
 uses-sdk
 INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\AndroidStudio --Project\Trffic_921_1\app\src\main\AndroidManifest.xml

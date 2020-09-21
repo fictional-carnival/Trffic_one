@@ -3,17 +3,25 @@ package com.mad;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
+import com.mad.bean.BaseBean;
+import com.mad.bean.User;
 import com.mad.db.DB;
 import com.mad.trafficclient.httppost.HttpPostRequest;
 import com.mad.trafficclient.util.LoadingDialog;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -21,6 +29,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Initapp extends Application {
@@ -30,10 +39,12 @@ public class Initapp extends Application {
     public static SharedPreferences.Editor edit;
     public static Context context;
     private static Toast tos;
-    public static String user;
-    public static HttpPostRequest postRequest;
+    public static JSONObject user;
     public static String url;
     public static Gson gson;
+    public static DB db;
+    public static BaseBean baseBean;
+    public static RequestQueue queue;
 
     @Override
     public void onCreate() {
@@ -44,16 +55,53 @@ public class Initapp extends Application {
         edit = sp.edit();
         gson = new Gson();
         url = "http://192.168.1.120:8080/api/v2/";
-        postRequest = new HttpPostRequest();
-//        new DB(context,)
-//        HashMap hashMap = new HashMap();
-//        hashMap.put("UserName", "user1");
-        user = "{\"UserName\":\"user1\"}";
+        db = new DB(context, "qb.db", null, 1);
+        queue = Volley.newRequestQueue(context);
+        baseBean = new BaseBean();
+//        setData();
     }
 
     public static void setData() {
-        postRequest.requestHttp(url + "get_all_user_info", user);
+//            HttpPostRequest postRequest = new HttpPostRequest();
+////            postRequest.requestHttp(url + "get_all_user_info", user);
+//            JSONArray array = new JSONObject(postRequest.getWebContext()).getJSONArray("ROWS_DETAIL");
+//            Log.i("==", "setData: " + postRequest.getWebContext());
+        doPost("get_all_user_info", null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject jsonObject) {
+                try {
+                    JSONArray array = jsonObject.getJSONArray("ROWS_DETAIL");
+                    for (int i = 0, l = array.length(); i < l; i++) {
+                        JSONObject object = array.getJSONObject(i);
+                        db.insert("user", baseBean.fromJson(object));
+                    }
+                    Cursor query = db.query("user", "username = ?", "user1");
+                    while (query.moveToNext()) {
+                        Log.i("==", "onResponse: "+query.getString(0));
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
 
+    public static void doPost(String path, Map map, Response.Listener<JSONObject> listener) {
+        HashMap hashMap = new HashMap();
+        hashMap.put("UserName", "user1");
+        JSONObject object = new JSONObject(hashMap);
+        if (map != null) {
+            object = new JSONObject(map);
+        }
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url + path, object, listener, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                if (volleyError.networkResponse == null) {
+                    toast("网络连接故障");
+                }
+            }
+        });
+        queue.add(request);
     }
 
     public static void toast(String s) {

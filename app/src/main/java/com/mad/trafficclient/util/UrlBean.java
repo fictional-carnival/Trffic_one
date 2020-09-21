@@ -15,8 +15,8 @@ public class UrlBean  {
      * port : 8888
      */
 
-    private String url;
-    private String port;
+    private String url = "192.168.1.120";
+    private String port ="8080";
 
     public String getUrl() {
         return url;

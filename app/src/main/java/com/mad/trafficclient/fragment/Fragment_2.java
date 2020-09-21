@@ -24,8 +24,12 @@ public class Fragment_2 extends Fragment {
         View view = inflater
                 .inflate(R.layout.fragment_layout02, container, false);
         listView = view.findViewById(R.id.lv_f2);
-
+        setData();
         return view;
+    }
+
+    private void setData() {
+
     }
 
 }
